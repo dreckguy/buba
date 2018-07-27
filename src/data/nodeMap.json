@@ -1,0 +1,29 @@
+{
+  "nodes":[
+    {
+      "id": "uuid1",
+      "value": "conecpt1",
+      "connectionsIds": [
+        "uuid2",
+        "uuid3"
+      ]
+    },
+    {
+      "id": "uuid2",
+      "value": "conecpt2",
+      "connectionsIds": [
+        "uuid1",
+        "uuid3"
+      ]
+    },
+    {
+      "id": "uuid3",
+      "value": "conecpt3",
+      "connectionsIds": [
+        "uuid2",
+        "uuid1"
+      ]
+    }
+  ]
+  
+}

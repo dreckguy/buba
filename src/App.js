@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import BubaImage from './images/buba.jpg';
 
+import ConceptGraph from './components/concept-graph';
+
 
 class App extends Component {
   render() {
@@ -14,6 +16,9 @@ class App extends Component {
         </header>
         <p className="App-intro">Here will be The Project of Ms. Ella Yonai</p>
         <p><img src={BubaImage} class = "buba"/></p>
+        <hr/>
+        <ConceptGraph/>
+
       </div>
     );
   }
