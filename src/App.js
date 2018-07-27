@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import BubaImage from './images/buba.jpg';
+
 
 class App extends Component {
   render() {
@@ -10,9 +12,8 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Ms. Ella Yonai's  Project</h1>
         </header>
-        <p className="App-intro">
-          Here will be The Project of Ms. Ella Yonai
-        </p>
+        <p className="App-intro">Here will be The Project of Ms. Ella Yonai</p>
+        <p><img src={BubaImage} class = "buba"/></p>
       </div>
     );
   }
