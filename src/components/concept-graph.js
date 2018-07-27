@@ -27,12 +27,13 @@ const data = {
  
 // the graph configuration, you only need to pass down properties
 // that you want to override, otherwise default ones will be used
-const myConfig = {
+const config = {
     nodeHighlightBehavior: true,
     node: {
         color: 'lightgreen',
         size: 120,
-        highlightStrokeColor: 'blue'
+        highlightStrokeColor: 'blue',
+        labelProperty: 'value'
     },
     link: {
         highlightColor: 'lightblue'
@@ -72,7 +73,7 @@ export default class ConceptGraph extends Component{
         <Graph
     id="graph-id" // id is mandatory, if no id is defined rd3g will throw an error
     data={data}
-    config={myConfig}
+    config={config}
     onClickNode={onClickNode}
     onClickLink={onClickLink}
     onMouseOverNode={onMouseOverNode}
