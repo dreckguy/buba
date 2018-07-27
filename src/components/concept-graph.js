@@ -1,11 +1,29 @@
 import React, { Component } from 'react';
 import { Graph } from 'react-d3-graph';
+import nodeMap from '../data/nodeMap';
+
  
 // graph payload (with minimalist structure)
+
+const nodes = nodeMap.nodes;
+const links = [];
+nodes.forEach(node => {
+  links.push(...node.connectionsIds.map((connectionId)=>{
+    return {source: connectionId, target: node.id};
+  }));
+
+});
+
 const data = {
+  nodes: nodes,
+  links:links
+};
+
+
+/*const data = {
     nodes: [{ id: 'Harry' }, { id: 'Sally' }, { id: 'Alice' }],
     links: [{ source: 'Harry', target: 'Sally' }, { source: 'Harry', target: 'Alice' }]
-};
+};*/
  
 // the graph configuration, you only need to pass down properties
 // that you want to override, otherwise default ones will be used

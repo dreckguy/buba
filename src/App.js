@@ -15,7 +15,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to Ms. Ella Yonai's  Project</h1>
         </header>
         <p className="App-intro">Here will be The Project of Ms. Ella Yonai</p>
-        <p><img src={BubaImage} class = "buba"/></p>
+        <p><img src={BubaImage} className = "buba"/></p>
         <hr/>
         <ConceptGraph/>
 
